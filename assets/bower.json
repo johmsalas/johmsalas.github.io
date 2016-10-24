@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "homepage": "https://github.com/johmsalas/johmsalas.github.io",
+  "authors": [
+    "Johmsalas <johmsalas@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^2.27.1",
+    "video.js": "videojs#^5.12.5",
+    "videojs-youtube": "^2.1.1"
+  }
+}
