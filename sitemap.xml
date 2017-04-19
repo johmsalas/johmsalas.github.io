@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://johmsalas.me/post/programming/react-getting-started/</loc>
+    <lastmod>2017-01-07T19:29:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/learning-japanese/000004_numbers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/programming/nodejs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/</loc>
+    <lastmod>2017-01-07T19:29:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/</loc>
+    <lastmod>2017-01-07T19:29:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
