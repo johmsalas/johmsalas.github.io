@@ -261,6 +261,36 @@
     };
   </code>
 </pre>
+
+<h4 id="main-js">main.js</h4>
+
+<pre>
+  <code class="language-javascript">
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import App from './App.jsx';
+
+    ReactDOM.render(<App />, document.getElementById('app'));
+  </code>
+</pre>
+
+<h4 id="app-jsx">App.jsx</h4>
+
+<pre>
+  <code class="language-javascript">
+    import React from 'react';
+
+    class App extends React.Component {
+      render() {
+        return (
+          <p>React is alive!!</p>
+        );
+      }
+    }
+
+    export default App;
+  </code>
+</pre>
 </div>
 
 
