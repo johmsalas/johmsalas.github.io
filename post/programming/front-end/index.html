@@ -61,7 +61,7 @@
     <main>
       
 <div class="l-container">
-  <article class="single article-cf6c3d42d577abb65b896fe4e916e9b8">
+  <article class="single article-cf57d1ed4639bdace0879e193904c428">
   <div class="header-wrapper">
     <div class="author">
       <div class="photo">
@@ -78,7 +78,7 @@
         
       </ul>
     </div>
-    <a href="https://johmsalas.me/post/programming/react-getting-started/" class="thumbnail hidden" title=""></a>
+    <a href="https://johmsalas.me/post/programming/front-end/" class="thumbnail hidden" title=""></a>
     <header class="article-header">
       <div class="clearfix">
         <h1 class="title"></h1>
@@ -89,14 +89,14 @@
 
   <aside class="p-share">
   <div class="label">Share</div>
-  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2freact-getting-started%2f&t="
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2ffront-end%2f&t="
     title="Share on Facebook"
     class="fb"
     target="_blank"
     rel="nofollow"
   >
   </a>
-  <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2freact-getting-started%2f&text=&tw_p=tweetbutton"
+  <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2ffront-end%2f&text=&tw_p=tweetbutton"
     title="Share on Twitter"
     class="tw"
     target="_blank"
@@ -106,51 +106,38 @@
 </aside>
 
 
-  <div class="article-body"><p>Basic libraries</p>
-
-<p>npm install -g babel
-npm install -g babel-cli</p>
-
-<p>npm init
-npm install webpack webpack-dev-server &ndash;save
-npm install react react-dom &ndash;save
-npm install babel-core babel-loader babel-preset-react babel-preset-es2015 &ndash;save-dev</p>
-
-<p>webpack.config.js
-const config = {
-  entry: &lsquo;./main.js&rsquo;,
-  output: {
-    path: &lsquo;/&rsquo;,
-    filename: &lsquo;index.js&rsquo;,
-  },
-  devServer: {
-    inline: true,
-    port: 7777,
-  },
-  module: {
-    loaders: [
-      {
-        test: /.jsx?$/,
-        exclude: /node_modules/,
-        loader: &lsquo;babel-loader&rsquo;,
-        query: {
-          presets: [&lsquo;es2015&rsquo;, &lsquo;react&rsquo;],
-        },
-      },
-    ],
-  },
-};</p>
-
-<p>module.exports = config;</p>
-
-<p>&ldquo;start&rdquo;: &ldquo;webpack-dev-server &ndash;hot&rdquo;</p>
-
-<p>npm install &ndash;global &ndash;production windows-build-tools
-npm config set msvs_version 2015 &ndash;global</p>
-
-<p>npm install &ndash;save-dev sass-loader css-loader style-loader node-sass</p>
-
-<p>npm install &ndash;save normalize-scss</p>
+  <div class="article-body"><p>HTML5
+  Markup changes
+    Semantico
+      no es cuestión de contenido sino de diseño
+      darle significado al html
+    xhtml and html4
+      attr=&ldquo;value&rdquo;, attr=value, attr
+      no need to close tags
+    simplificación
+      &lt;!DOCTYPE html&gt;
+      <meta charset="UTF-8" />
+    Nuevas etiquetas
+      section&gt;h1 -&gt; semantica!
+      aside -&gt; contenido secundario
+      article
+        contenido autonomo
+        &amp;&gt;h1+header+footer
+  Forms
+    output, datalist
+    input types: tel, email, url
+    validation: required, pattern
+ES6
+  Spread Operator
+  Spread variables
+CSS
+  Against CSS Frameworks
+    son muy verbosos
+    poco semanticos &ldquo;pure&ndash;button&ndash;disabled&rdquo; vs &ldquo;button[disabled]&rdquo;
+  For CSS Frameworks
+    Quickly prototyping
+  Holy Grail Layout
+React</p>
 </div>
 
 

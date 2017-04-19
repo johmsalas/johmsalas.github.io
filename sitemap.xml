@@ -2,8 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://johmsalas.me/post/programming/react-getting-started/</loc>
-    <lastmod>2017-01-07T19:29:32-05:00</lastmod>
+    <loc>https://johmsalas.me/post/around-the-world/brisbane/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/cambodia/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/hongkong/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/las-vegas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/los-angeles/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/macaw/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/malasya/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/melbourne/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/new-york/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/san-diego/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/san-francisco/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/sydney/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/around-the-world/thailand/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/learning-japanese/000003_greetings/</loc>
   </url>
   
   <url>
@@ -11,18 +62,48 @@
   </url>
   
   <url>
-    <loc>https://johmsalas.me/post/programming/nodejs/</loc>
+    <loc>https://johmsalas.me/post/learning-japanese/000008_demostrativos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/programming/atom-setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/programming/front-end/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/programming/hyper/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/programming/react-getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/programming/state-management/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/react/nextjs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/react/react-native/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johmsalas.me/post/react/snippets/</loc>
   </url>
   
   <url>
     <loc>https://johmsalas.me/</loc>
-    <lastmod>2017-01-07T19:29:32-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://johmsalas.me/post/</loc>
-    <lastmod>2017-01-07T19:29:32-05:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -61,7 +61,7 @@
     <main>
       
 <div class="l-container">
-  <article class="single article-cf6c3d42d577abb65b896fe4e916e9b8">
+  <article class="single article-01daf6ab1371cb592c8a8d7e84eb67c7">
   <div class="header-wrapper">
     <div class="author">
       <div class="photo">
@@ -78,7 +78,7 @@
         
       </ul>
     </div>
-    <a href="https://johmsalas.me/post/programming/react-getting-started/" class="thumbnail hidden" title=""></a>
+    <a href="https://johmsalas.me/post/programming/hyper/" class="thumbnail hidden" title=""></a>
     <header class="article-header">
       <div class="clearfix">
         <h1 class="title"></h1>
@@ -89,14 +89,14 @@
 
   <aside class="p-share">
   <div class="label">Share</div>
-  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2freact-getting-started%2f&t="
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2fhyper%2f&t="
     title="Share on Facebook"
     class="fb"
     target="_blank"
     rel="nofollow"
   >
   </a>
-  <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2freact-getting-started%2f&text=&tw_p=tweetbutton"
+  <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2fhyper%2f&text=&tw_p=tweetbutton"
     title="Share on Twitter"
     class="tw"
     target="_blank"
@@ -106,51 +106,68 @@
 </aside>
 
 
-  <div class="article-body"><p>Basic libraries</p>
+  <div class="article-body"><p><a href="https://hyper.is/">https://hyper.is/</a></p>
 
-<p>npm install -g babel
-npm install -g babel-cli</p>
+<p><a href="https://github.com/bnb/awesome-hyper">https://github.com/bnb/awesome-hyper</a></p>
 
-<p>npm init
-npm install webpack webpack-dev-server &ndash;save
-npm install react react-dom &ndash;save
-npm install babel-core babel-loader babel-preset-react babel-preset-es2015 &ndash;save-dev</p>
+<p>extensions:
+windows:
+echo &ldquo;&rdquo; &gt; .hyper.css
+touch .hyper.css</p>
 
-<p>webpack.config.js
-const config = {
-  entry: &lsquo;./main.js&rsquo;,
-  output: {
-    path: &lsquo;/&rsquo;,
-    filename: &lsquo;index.js&rsquo;,
-  },
-  devServer: {
-    inline: true,
-    port: 7777,
-  },
-  module: {
-    loaders: [
-      {
-        test: /.jsx?$/,
-        exclude: /node_modules/,
-        loader: &lsquo;babel-loader&rsquo;,
-        query: {
-          presets: [&lsquo;es2015&rsquo;, &lsquo;react&rsquo;],
-        },
-      },
-    ],
-  },
-};</p>
+<p>hpm-cli
+A plugin manager for Hyper.app
+npm install -g hpm-cli</p>
 
-<p>module.exports = config;</p>
+<p>hypercwd
+Opens new tabs with the same directory as the current tab in HyperTerm</p>
 
-<p>&ldquo;start&rdquo;: &ldquo;webpack-dev-server &ndash;hot&rdquo;</p>
+<p>hyperterm-paste
+Makes pasting into hyperterm safe and easy</p>
 
-<p>npm install &ndash;global &ndash;production windows-build-tools
-npm config set msvs_version 2015 &ndash;global</p>
+<p>hyperlinks
+Extension for Hyper that automatically links URLs.</p>
 
-<p>npm install &ndash;save-dev sass-loader css-loader style-loader node-sass</p>
+<p>hyper-statusline
+Status line showing current cwd and git branch status</p>
 
-<p>npm install &ndash;save normalize-scss</p>
+<p>hyper-alt-click
+Allows moving the cursor by alt+click&rsquo;ing where you want it to go.</p>
+
+<p>hyper-history
+Show a list of history commands</p>
+
+<p>hyperterm-tab-icons
+Icons in the header tabs for the current running process in HyperTerm.</p>
+
+<p>config-hyperterm
+npm install &ndash;global config-hyperterm
+Easily set/get Hyper config.
+&gt; config-hyperterm</p>
+
+<p>hyperfull
+Will start Hyper in full screen</p>
+
+<p>hyper-stylesheet
+Adds support for an external hyper stylesheet
+hpm install hyper-stylesheet
+Edit  ~/.hyper.css</p>
+
+<p>Hyperlayout
+npm install -g hyperlayout hpm-cli
+$ hpm install hyperlayout
+<a href="https://www.npmjs.com/package/hyperlayout">https://www.npmjs.com/package/hyperlayout</a></p>
+
+<p>hyperpower
+Extension for Hyper that turns on power mode, with bonus wow mode.
+<a href="https://www.npmjs.com/package/hyperpower">https://www.npmjs.com/package/hyperpower</a></p>
+
+<p>htyt
+Hyper plugin to search &amp; play youtube videos.</p>
+
+<p>Issues
+Hyper is an on progress project&hellip; deserves&hellip; bla bla bla
+If you face an issue after installing the plugins and need to find which one is generating the issue, make a binary search. In my case, I had to uninstall hyper-history</p>
 </div>
 
 

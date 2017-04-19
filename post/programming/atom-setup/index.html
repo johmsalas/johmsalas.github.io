@@ -61,7 +61,7 @@
     <main>
       
 <div class="l-container">
-  <article class="single article-cf6c3d42d577abb65b896fe4e916e9b8">
+  <article class="single article-74c4de96d00655bc046ae7e690ee44e3">
   <div class="header-wrapper">
     <div class="author">
       <div class="photo">
@@ -78,7 +78,7 @@
         
       </ul>
     </div>
-    <a href="https://johmsalas.me/post/programming/react-getting-started/" class="thumbnail hidden" title=""></a>
+    <a href="https://johmsalas.me/post/programming/atom-setup/" class="thumbnail hidden" title=""></a>
     <header class="article-header">
       <div class="clearfix">
         <h1 class="title"></h1>
@@ -89,14 +89,14 @@
 
   <aside class="p-share">
   <div class="label">Share</div>
-  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2freact-getting-started%2f&t="
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2fatom-setup%2f&t="
     title="Share on Facebook"
     class="fb"
     target="_blank"
     rel="nofollow"
   >
   </a>
-  <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2freact-getting-started%2f&text=&tw_p=tweetbutton"
+  <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fjohmsalas.me%2fpost%2fprogramming%2fatom-setup%2f&text=&tw_p=tweetbutton"
     title="Share on Twitter"
     class="tw"
     target="_blank"
@@ -106,51 +106,100 @@
 </aside>
 
 
-  <div class="article-body"><p>Basic libraries</p>
+  <div class="article-body"><p>Theme:</p>
 
-<p>npm install -g babel
-npm install -g babel-cli</p>
+<p>Seti-UI
+<a href="https://atom.io/themes/seti-ui">https://atom.io/themes/seti-ui</a>
+Install
+1. apm install seti-ui (Atom restart might be necessary)
+2. open settings (ctrl/cmd + ,) &gt; themes
+3. Set seti ui for UI Themes</p>
 
-<p>npm init
-npm install webpack webpack-dev-server &ndash;save
-npm install react react-dom &ndash;save
-npm install babel-core babel-loader babel-preset-react babel-preset-es2015 &ndash;save-dev</p>
+<p>Monokai-seti
+<a href="https://atom.io/themes/monokai-seti">https://atom.io/themes/monokai-seti</a>
+Install
+1. apm install monokai-seti (Atom restart might be necessary)
+2. open settings (ctrl/cmd + ,) &gt; themes
+3. Set seti ui for UI Themes</p>
 
-<p>webpack.config.js
-const config = {
-  entry: &lsquo;./main.js&rsquo;,
-  output: {
-    path: &lsquo;/&rsquo;,
-    filename: &lsquo;index.js&rsquo;,
+<p>Nuclide
+1. apm install nuclide
+2. open settings (ctrl/cmd + ,) &gt; packages &gt; look for nuclide &gt; settings &gt; Install recommended packages on start
+3. Restart Atom</p>
+
+<p>Pigments
+1. apm install pigments</p>
+
+<p>Todo show
+1. apm install todo-show</p>
+
+<p>git-time-machine
+1. apm install git-time-machine</p>
+
+<p>emmet
+1. apm install emmet</p>
+
+<p>apm install javascript-snippets
+apm install css-comb
+apm install git-plus
+apm install minimap
+apm install highlight-selected
+apm install minimap-highlight-selected
+apm install script
+apm install react-snippets
+apm install atom-shortcuts
+apm install language-babel
+apm install imdone-atom
+apm install tasks</p>
+
+<p>apm install docblockr
+apm install linter-flow
+apm install open-recent
+apm install sync-settings
+apm install tool-bar
+apm install node-repl</p>
+
+<p>[Atom JS]
+apm install atom-beautify autoclose-html highlight-selected language-babel react linter linter-eslint minimap minimap-highlight-selected pigments seti-ui monokai-seti
+apm install atom-ternjs
+apm install autocomplete-modules
+apm install react</p>
+
+<p>Use emmet for jsx
+<a href="https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0">https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0</a></p>
+
+<p>ESLint
+1. Install the node package
+npm install -g eslint
+Use Global Eslint
+2. apm install linter-eslint</p>
+
+<p>Install everything
+Execute in your command line:
+apm install seti-ui
+apm install seti-ui monokai-seti</p>
+
+<p>emmet-snippets-compatibility</p>
+
+<p>.eslintrc.js
+module.exports = {
+  &ldquo;extends&rdquo;: &ldquo;airbnb&rdquo;,
+  &ldquo;env&rdquo;: {
+    &ldquo;browser&rdquo;: true,
+    &ldquo;node&rdquo;: true
   },
-  devServer: {
-    inline: true,
-    port: 7777,
-  },
-  module: {
-    loaders: [
-      {
-        test: /.jsx?$/,
-        exclude: /node_modules/,
-        loader: &lsquo;babel-loader&rsquo;,
-        query: {
-          presets: [&lsquo;es2015&rsquo;, &lsquo;react&rsquo;],
-        },
-      },
-    ],
-  },
+  &ldquo;plugins&rdquo;: [
+    &ldquo;react&rdquo;,
+    &ldquo;jsx-a11y&rdquo;,
+    &ldquo;import&rdquo;
+  ],
+  &ldquo;rules&rdquo;: {
+    &ldquo;react/jsx-filename-extension&rdquo;: [1, { &ldquo;extensions&rdquo;: [&ldquo;.js&rdquo;, &ldquo;.jsx&rdquo;] }],
+    &ldquo;linebreak-style&rdquo;: [&ldquo;error&rdquo;, &ldquo;windows&rdquo;],
+  }
 };</p>
 
-<p>module.exports = config;</p>
-
-<p>&ldquo;start&rdquo;: &ldquo;webpack-dev-server &ndash;hot&rdquo;</p>
-
-<p>npm install &ndash;global &ndash;production windows-build-tools
-npm config set msvs_version 2015 &ndash;global</p>
-
-<p>npm install &ndash;save-dev sass-loader css-loader style-loader node-sass</p>
-
-<p>npm install &ndash;save normalize-scss</p>
+<p>npm install &ndash;save-dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react</p>
 </div>
 
 
