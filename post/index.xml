@@ -2,20 +2,320 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Johnny M. Salas</title>
-    <link>https://johmsalas.me/post/index.xml</link>
+    <link>//johmsalas.me/post/index.xml</link>
     <description>Recent content in Posts on Johnny M. Salas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Jan 2017 19:29:32 -0500</lastBuildDate>
-    <atom:link href="https://johmsalas.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2017 19:29:32 -0500</lastBuildDate>
+    <atom:link href="//johmsalas.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>React - Environment setup</title>
-      <link>https://johmsalas.me/post/programming/react-getting-started/</link>
-      <pubDate>Sat, 07 Jan 2017 19:29:32 -0500</pubDate>
+      <title>Atom setup for Javascript development</title>
+      <link>//johmsalas.me/post/programming/atom-setup/</link>
+      <pubDate>Mon, 08 May 2017 19:29:32 -0500</pubDate>
       
-      <guid>https://johmsalas.me/post/programming/react-getting-started/</guid>
-      <description>
+      <guid>//johmsalas.me/post/programming/atom-setup/</guid>
+      <description>&lt;p&gt;These are my recommended and day to day packages and themes for a good experience using atom while developing with Javascript. Your IDE will be ready for compiling SASS, language linting, &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m looking forward to read your suggestion on the comments&lt;/p&gt;
+
+&lt;h1 id=&#34;atom-setup-for-javascript-development&#34;&gt;Atom setup for Javascript development&lt;/h1&gt;
+
+&lt;h2 id=&#34;software-required&#34;&gt;Software required&lt;/h2&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t, grab and install a copy of both &lt;a href=&#34;https://atom.io/&#34;&gt;atom&lt;/a&gt; and &lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;nodejs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;global-libraries&#34;&gt;Global libraries&lt;/h2&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    npm install -g node-sass
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&#34;theme&#34;&gt;Theme:&lt;/h2&gt;
+
+&lt;h3 id=&#34;seti-ui-monokai-seti&#34;&gt;Seti-UI + Monokai-seti&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;//johmsalas.me/images/atom-seti.png&#34; alt=&#34;Seti-UI + Monokai-seti&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install seti-ui
+    apm install monokai-seti
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Restart atom (ctrl + shift + f5)&lt;/li&gt;
+&lt;li&gt;open settings (ctrl/cmd + ,), navigate to themes&lt;/li&gt;
+&lt;li&gt;Set seti ui for UI Theme&lt;/li&gt;
+&lt;li&gt;Set monokai-seti ui for Syntax Theme&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;custom-stylesheet&#34;&gt;Custom stylesheet&lt;/h4&gt;
+
+&lt;p&gt;Atom supports custom styling using css. Find the stylesheet item in the file menu. This is my personal css configuration in case you need some ideas&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-css&#34;&gt;
+    // style the background color of the tree view
+    .tree-view {
+      // background-color: whitesmoke;
+      font-size: 11px;
+    }
+
+    // style the background and foreground colors on the atom-text-editor-element itself
+    atom-text-editor {
+      // color: white;
+      // background-color: hsl(180, 24%, 12%);
+      font-size: 13px;color: white;
+    }
+
+    // style UI elements inside atom-text-editor
+    atom-text-editor .cursor {
+      // border-color: red;
+    }
+
+    .tree-view .name.icon::before {
+      margin: 0 6px 0 0px;
+    }
+
+    .list-tree li:not(.list-nested-item):not(.tabBlender),
+    .list-group li:not(.list-nested-item):not(.tabBlender),
+    .list-tree li.list-nested-item &gt; .list-item,
+    .list-group li.list-nested-item &gt; .list-item {
+      line-height: 24px;
+    }
+
+    .has-custom-icons .tab-bar:not([data-reactid]) .tab .title[data-path]::before {
+      margin-right: 5px;
+    }
+    .tab-bar {
+      height: 33px;
+      line-height: 30px;
+    }
+    .tab-bar .tab.active {
+      background: brown;
+      max-width: 140px;
+      min-width: 140px;
+    }
+    .tab-bar .tab {
+      min-width: 4rem;
+      max-width: 7rem;
+    }
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&#34;packages&#34;&gt;Packages:&lt;/h2&gt;
+
+&lt;p&gt;Once Atom Package Manager (APM) is installed, every other package can be installed from the command line. Unfortunatelly, APM will install one package at a time (Until this post was published)&lt;/p&gt;
+
+&lt;h4 id=&#34;pigments&#34;&gt;Pigments&lt;/h4&gt;
+
+&lt;p&gt;Pigments provides a preview of html colors, usefull on css files&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install pigments
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;todo-show&#34;&gt;Todo show&lt;/h4&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install todo-show
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;git-time-machine&#34;&gt;Git time machine&lt;/h4&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install git-time-machine
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;emmet&#34;&gt;Emmet&lt;/h4&gt;
+
+&lt;p&gt;One of the most installed package. It autocompletes your HTML according to a specific format.&lt;/p&gt;
+
+&lt;pre class=&#34;line-numbers&#34;&gt;
+  &lt;code class=&#34;language-markup&#34;&gt;
+    tr&gt;td*4&gt;a (shift + space)
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Above emmet command will expand into the following HTML markup&lt;/p&gt;
+
+&lt;pre class=&#34;line-numbers&#34;&gt;
+  &lt;code class=&#34;language-markup&#34;&gt;
+    &lt;xmp&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/xmp&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Install it using the next command&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install emmet
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;minimap&#34;&gt;Minimap&lt;/h4&gt;
+
+&lt;p&gt;Installs a map preview of the whole file&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install minimap
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;highlight-selected&#34;&gt;Highlight-selected&lt;/h4&gt;
+
+&lt;p&gt;Highlights all the ocurrences of the current selected text. You&amp;rsquo;ll also want to install minimap-highlight-selected which provides support for highlighting on minimap&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install highlight-selected
+    apm install minimap-highlight-selected
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;snippets-packages&#34;&gt;Snippets packages&lt;/h4&gt;
+
+&lt;p&gt;Contribute to the snippets package with some more specific snippets&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install javascript-snippets
+    apm install react-snippets
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;repl&#34;&gt;REPL&lt;/h4&gt;
+
+&lt;p&gt;Execute Javascript directly in Atom&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install node-repl
+    apm install script
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;git-plus&#34;&gt;Git plus&lt;/h4&gt;
+
+&lt;p&gt;Have a better Git support&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install git-plus
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;atom-shortcuts&#34;&gt;Atom shortcuts&lt;/h4&gt;
+
+&lt;p&gt;A cheat sheet for atom shortcuts (ctrl + `)&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install atom-shortcuts
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;sync-settings&#34;&gt;Sync settings&lt;/h4&gt;
+
+&lt;p&gt;Sync you settings in a gist!&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install sync-settings
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;linters&#34;&gt;Linters&lt;/h4&gt;
+
+&lt;p&gt;Linters highlight mistakes directly inside the IDE&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    npm install -g eslint
+    apm install linter
+    apm install linter-eslint
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;react-useful-packages&#34;&gt;React useful packages&lt;/h4&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install language-babel
+    apm install react
+    apm install autoclose-html
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Also have a look to this &lt;a href=&#34;https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0&#34;&gt;gist&lt;/a&gt; for supporting emmet in jsx&lt;/p&gt;
+
+&lt;h4 id=&#34;other-useful-packages&#34;&gt;Other useful packages&lt;/h4&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install css-comb
+    apm install imdone-atom
+    apm install tasks
+    apm install docblockr
+    apm install linter-flow
+    apm install open-recent
+    apm install tool-bar
+    apm install atom-beautify
+    apm install atom-ternjs
+    apm install autocomplete-modules
+    apm install emmet-snippets-compatibility
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&#34;other-suggested-packages&#34;&gt;Other suggested packages&lt;/h4&gt;
+
+&lt;p&gt;If you program with react native or &amp;hellip;.&lt;/p&gt;
+
+&lt;h5 id=&#34;nuclide&#34;&gt;Nuclide&lt;/h5&gt;
+
+&lt;p&gt;Nuclide provides debug, worksets, &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    apm install nuclide
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;open settings (ctrl/cmd + ,) &amp;gt; packages &amp;gt; look for nuclide &amp;gt; settings &amp;gt; Install recommended packages on start&lt;/li&gt;
+&lt;li&gt;Restart Atom&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>React &#43; webpack &#43; babel/ES6 &#43; SASS &#43; normalize</title>
+      <link>//johmsalas.me/post/programming/react-getting-started/</link>
+      <pubDate>Mon, 01 May 2017 19:29:32 -0500</pubDate>
+      
+      <guid>//johmsalas.me/post/programming/react-getting-started/</guid>
+      <description>&lt;p&gt;This is a step by step guide for getting started your React environment. Or you can even grab the final result from the github repository&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;react-webpack-babel-es6-sass-normalize&#34;&gt;React + webpack + babel/ES6 + SASS + normalize&lt;/h1&gt;
 
@@ -38,6 +338,10 @@
 
 &lt;h2 id=&#34;project-setup&#34;&gt;Project setup&lt;/h2&gt;
 
+&lt;p&gt;Once the global libraries are set up, there are two options for getting started.&lt;/p&gt;
+
+&lt;p&gt;###1. Clone the next repository&lt;/p&gt;
+
 &lt;p&gt;Init npm inside the project folder and setup the start script in the package.json&lt;/p&gt;
 
 &lt;pre&gt;
@@ -54,7 +358,7 @@
   &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;
+&lt;h4 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h4&gt;
 
 &lt;pre&gt;
   &lt;code class=&#34;language-bash&#34;&gt;
@@ -71,11 +375,11 @@
   &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;h3 id=&#34;files-setup&#34;&gt;Files setup&lt;/h3&gt;
+&lt;h4 id=&#34;files-setup&#34;&gt;Files setup&lt;/h4&gt;
 
-&lt;h4 id=&#34;webpack-config-js&#34;&gt;webpack.config.js&lt;/h4&gt;
+&lt;h5 id=&#34;webpack-config-js&#34;&gt;webpack.config.js&lt;/h5&gt;
 
-&lt;pre&gt;
+&lt;pre class=&#34;line-numbers&#34;&gt;
   &lt;code class=&#34;language-javascript&#34;&gt;
     const config = {
       entry: &#39;./main.js&#39;,
@@ -105,9 +409,9 @@
   &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;h4 id=&#34;eslintrc-js&#34;&gt;.eslintrc.js&lt;/h4&gt;
+&lt;h5 id=&#34;eslintrc-js&#34;&gt;.eslintrc.js&lt;/h5&gt;
 
-&lt;pre&gt;
+&lt;pre class=&#34;line-numbers&#34;&gt;
   &lt;code class=&#34;language-javascript&#34;&gt;
     module.exports = {
       &#34;extends&#34;: &#34;airbnb&#34;,
@@ -127,29 +431,72 @@
     };
   &lt;/code&gt;
 &lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://johmsalas.me/post/learning-japanese/000004_numbers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://johmsalas.me/post/learning-japanese/000004_numbers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://johmsalas.me/post/programming/nodejs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://johmsalas.me/post/programming/nodejs/</guid>
-      <description>&lt;p&gt;npm install express-generator -g&lt;/p&gt;
 
-&lt;p&gt;feather-js
-contra: los endpoints no son dinamicos&lt;/p&gt;
-</description>
+&lt;h5 id=&#34;main-js&#34;&gt;main.js&lt;/h5&gt;
+
+&lt;pre class=&#34;line-numbers&#34;&gt;
+  &lt;code class=&#34;language-javascript&#34;&gt;
+    &lt;xmp&gt;
+      import React from &#39;react&#39;;
+      import ReactDOM from &#39;react-dom&#39;;
+      import App from &#39;./App.jsx&#39;;
+
+      ReactDOM.render(&lt;App /&gt;, document.getElementById(&#39;app&#39;));
+    &lt;/xmp&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h5 id=&#34;app-jsx&#34;&gt;App.jsx&lt;/h5&gt;
+
+&lt;pre class=&#34;line-numbers&#34;&gt;
+  &lt;code class=&#34;language-javascript&#34;&gt;
+    &lt;xmp&gt;
+      import React from &#39;react&#39;;
+
+      class App extends React.Component {
+        render() {
+          return (
+            &lt;p&gt;React is alive!!&lt;/p&gt;
+          );
+        }
+      }
+
+      export default App;
+    &lt;/xmp&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h5 id=&#34;index-html&#34;&gt;index.html&lt;/h5&gt;
+
+&lt;pre class=&#34;line-numbers&#34;&gt;
+  &lt;code class=&#34;language-markup&#34;&gt;
+    &lt;xmp&gt;
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang = &#34;en&#34;&gt;
+
+         &lt;head&gt;
+            &lt;meta charset = &#34;UTF-8&#34;&gt;
+            &lt;title&gt;React App&lt;/title&gt;
+         &lt;/head&gt;
+
+         &lt;body&gt;
+            &lt;div id = &#34;app&#34;&gt;&lt;/div&gt;
+            &lt;script src = &#34;index.js&#34;&gt;&lt;/script&gt;
+         &lt;/body&gt;
+      &lt;/html&gt;
+    &lt;/xmp&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&#34;run-your-app&#34;&gt;Run your app!!!&lt;/h2&gt;
+
+&lt;p&gt;Finally, just run the npm start task&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&#34;language-bash&#34;&gt;
+    npm run start
+  &lt;/code&gt;
+&lt;/pre&gt;</description>
     </item>
     
   </channel>
